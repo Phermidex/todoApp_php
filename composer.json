@@ -1,5 +1,5 @@
 {
-  "name": "vendor_name/PhpTodoAppPDO",
+  "name": "vendor_name/phptodoapp",
   "description": "Todo app using PDO by Phermidex.",
     "autoload" : {
         "classmap": [
