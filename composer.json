@@ -1,5 +1,6 @@
 {
-    "title": "TodoApp PDO",
+    "name": "TodoApp PDO",
+    "description": "Todo app using PDO by Phermidex.",
   "type": "object",
   "properties": {
     "name": {
