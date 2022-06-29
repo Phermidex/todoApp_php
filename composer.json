@@ -3,5 +3,18 @@
         "classmap": [
             "./"
         ]
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hermides Medina",
+            "email": "hermides07@gmail.com",
+            "homepage": "https://github.com/Phermidex",
+            "role": "Developer"
+        }
+    ],
+    "require" : {
+        "php" : ">=7.4",
+        "ext-mbstring": "*"
     }
 }
