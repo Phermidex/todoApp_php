@@ -9,8 +9,6 @@ if(!empty($_POST['new'])){
             'tittle' => $_POST['tittle'],
             'description' => $_POST['description']
         ]);
-
-        header('location','https://todoapp345.herokuapp.com/index.php');
     
     }
 
