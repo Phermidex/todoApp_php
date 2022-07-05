@@ -16,8 +16,6 @@ if(!empty($_POST['new'])){
 
     if($_POST['new'] === 'done'){
 
-        header("Refresh:2; url=https://todoapp345.herokuapp.com/index.php");
-
         App::get('database')->update('todos', [
             'completed' => $_POST['completed']
         ], $_POST['update']);
