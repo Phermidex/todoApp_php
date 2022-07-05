@@ -29,7 +29,7 @@
         <div class="card mt-3 m-auto border-0" style="width: 80%;">
             <div class="card-body">
                 <ul class="list-group">
-                <?php  foreach($dataTasks as $task) {
+                <?php  if(sizeof($dataTasks) > 0) { foreach($dataTasks as $task) {
                         $isCompleted = ($task->completed ? 'text-decoration-line-through' : 'show');
                         $isCompletedDate = ($task->completed ? 'bg-success text-decoration-line-through text-white' : 'bg-primary');
                         $actionUrl = Tools::baseURL("view/?get=$task->id");
@@ -38,7 +38,7 @@
                                 <a class='stretched-link' href='$actionUrl'><span>$task->tittle</span></a>
                                 $infoDate
                             </li>";
-                        } ?>
+                        } } ?>
                 </ul>
             </div>
         </div>
