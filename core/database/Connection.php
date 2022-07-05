@@ -7,7 +7,7 @@ class Connection {
 
         try {
             return new PDO(
-                 'mysql:host='.$config['host'].';dbname='.$config['dbname'],
+                 'mysql:host='.$config['host'].';port='.$config['port'].';dbname='.$config['dbname'],
                  $config['username'],
                  $config['password']
                 );
