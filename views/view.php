@@ -2,8 +2,8 @@
 
         require './views/parts/header.php';
         require './views/navigation.php';
-        require './parts/formDone.php';
-        require './parts/formUnDone.php';
+        require './views/parts/formDone.php';
+        require './views/parts/formUnDone.php';
 ?>
     <div class="container">
         <div class="card mt-3 m-auto border-0" style="width: 80%;">
