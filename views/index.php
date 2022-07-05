@@ -30,10 +30,11 @@
             <div class="card-body">
                 <ul class="list-group">
                 <?php echo count($dataTasks);  if(count($dataTasks) > 0) { foreach($dataTasks as $task) {
-                        $isCompleted = ($task->completed ? 'text-decoration-line-through' : 'show');
-                        $isCompletedDate = ($task->completed ? 'bg-success text-decoration-line-through text-white' : 'bg-primary');
-                        $actionUrl = Tools::baseURL("view/?get=$task->id");
-                        $infoDate = ($task->completed ? "<span class='badge $isCompletedDate float-end'>$task->updated_At</span>" : "<span class='badge $isCompletedDate float-end'>$task->created_At</span>");
+                        #$isCompleted = ($task->completed ? 'text-decoration-line-through' : 'show');
+                        #$isCompletedDate = ($task->completed ? 'bg-success text-decoration-line-through text-white' : 'bg-primary');
+                        #$actionUrl = Tools::baseURL("view/?get=$task->id");
+                        #$infoDate = ($task->completed ? "<span class='badge $isCompletedDate float-end'>$task->updated_At</span>" : "<span class='badge $isCompletedDate float-end'>$task->created_At</span>");
+                        $infoDate = 'NULL';
                         echo "<li class='list-group-item $isCompleted'>
                                 <a class='stretched-link' href='$actionUrl'><span>$task->tittle</span></a>
                                 $infoDate
