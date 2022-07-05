@@ -10,7 +10,7 @@ if(!empty($_POST['new'])){
             'description' => $_POST['description']
         ]);
 
-        header('location','/');
+        header('location','https://todoapp345.herokuapp.com/index.php');
     
     }
 
@@ -20,7 +20,7 @@ if(!empty($_POST['new'])){
             'completed' => $_POST['completed']
         ], $_POST['update']);
 
-        header('location','/');
+        header('location','https://todoapp345.herokuapp.com/index.php');
     
     }
 }
