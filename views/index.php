@@ -32,7 +32,7 @@
                 <?php echo count($dataTasks);  if(count($dataTasks) > 0) { foreach($dataTasks as $task) {
                         $isCompleted = ($task->completed === true ? 'text-decoration-line-through' : 'show');
                         $isCompletedDate = ($task->completed == true ? 'bg-success text-decoration-line-through text-white' : 'bg-primary');
-                        $actionUrl = Tools::baseURL("view/?get=$task->id");
+                        #$actionUrl = Tools::baseURL("view/?get=$task->id");
                         $infoDate = ($task->completed == true ? "<span class='badge $isCompletedDate float-end'>$task->updated_At</span>" : "<span class='badge $isCompletedDate float-end'>$task->created_At</span>");
                         echo "<li class='list-group-item $isCompleted'>
                                 <a class='stretched-link' href='$actionUrl'><span>$task->tittle</span></a>
