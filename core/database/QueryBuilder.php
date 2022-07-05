@@ -51,7 +51,7 @@ class QueryBuilder {
             'update %s SET %s = %s, updated_At = current_timestamp() WHERE id = %s',
             $table,
             implode(', ', array_keys($parameters)),
-            implode(', :', array_values($parameters)),
+            ':' . implode(', :', array_values($parameters)),
             $id
         );
 
