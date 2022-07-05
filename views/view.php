@@ -9,11 +9,11 @@
         <div class="card mt-3 m-auto border-0" style="width: 80%;">
             <div class="card-body">
                 <?php  foreach($dataTasks as $task) {
-                        $isCompleted = ($task->completed ? 'disabled' : 'show');
-                        $isCompletedDate = ($task->completed ? 'bg-success text-decoration-line-through text-white' : 'bg-primary');
-                        $disabledLink = ($task->completed ? 'link-secondary' : 'stretched-link');
+                        $isCompleted = ($task->completed == true ? 'disabled' : 'show');
+                        $isCompletedDate = ($task->completed == true ? 'bg-success text-decoration-line-through text-white' : 'bg-primary');
+                        $disabledLink = ($task->completed == true ? 'link-secondary' : 'stretched-link');
                         $doneAction = $isCompleted === 'show' ? formDone($task->id) : '<b>Done!</b><br/>'.formUnDone($task->id);
-                        $infoDate = ($task->completed ? "<p style='margin-top: -3rem' class='badge $isCompletedDate float-end'>$task->updated_At</p>" : "<p style='margin-top: -3rem' class='badge $isCompletedDate float-end'>$task->created_At</p>");
+                        $infoDate = ($task->completed == true ? "<p style='margin-top: -3rem' class='badge $isCompletedDate float-end'>$task->updated_At</p>" : "<p style='margin-top: -3rem' class='badge $isCompletedDate float-end'>$task->created_At</p>");
                         echo "<div class='$isCompleted'>
                                 <a href='../'>Back</a>
                                 <h1>$task->tittle</h1>
