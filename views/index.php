@@ -39,7 +39,7 @@
                                 <a class='stretched-link' href='$actionUrl'><span>$task->tittle</span></a>
                                 $infoDate
                             </li>";
-                        } } else { echo "<li class='list-group-item'>Not data found</li>" } ?>
+                        } } else { echo "<li class='list-group-item'>Not data found</li>"; } ?>
                 </ul>
             </div>
         </div>
