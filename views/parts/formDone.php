@@ -3,7 +3,8 @@
 use App\Core\Tools;
 
 function formDone($id) {
-    $url = Tools::baseURL("");
+    #$url = Tools::baseURL("");
+    $url = 'https://todoapp345.herokuapp.com/index.php';
     $done = "
         <form action='$url' method='post'>
             <input type='hidden' name='new' value='done' />
