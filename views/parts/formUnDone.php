@@ -4,7 +4,7 @@ use App\Core\Tools;
 
 function formUnDone($id) {
     #$url = Tools::baseURL("");
-    $url = 'https://todoapp345.herokuapp.com/index.php';
+    $url = 'https://todoapp345.herokuapp.com/index.php/view/?get='.$id;
     $done = "
         <form action='$url' method='post'>
             <input type='hidden' name='new' value='done' />
